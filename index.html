@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey Form</title>
+</head>
+  <body>
+
+    <h1 id="title">Survey Form</h1>
+
+    <p id="description">Please fill out this form with the required information</p>
+
+    <form id="survey-form">
+      
+        <fieldset>
+         <label for="name" id="name-label">Enter your name: <input id="name" type="text" placeholder="Anna Andersson" required /></label>
+         <label for="email" id="email-label">Enter your email: <input id="email" type="email" placeholder="anna.andersson@gmail.com" required /></label>
+        </fieldset>
+        
+        <fieldset>
+         <label for="number" id="number-label">Enter your age: <input id="number" type="number" min="18" max="110" placeholder="18" /></label>
+        </fieldset>
+        
+        <fieldset>
+         <label for="dropdown">Enter your gender: 
+          <select id="dropdown" name="dropdown">
+            <option value="">(Select one:) </option>
+            <option value="1"> Male</option>
+            <option value="2"> Female</option>
+            <option value="2"> Undisclosed</option>
+          </select>
+         </label>
+        </fieldset>
+      
+        <fieldset>
+         How satisfied are you with the current government? 
+         <label for="very-satisfied"><input id="very-satisfied" type="radio" name="satisfaction" class="inline" value="1" checked /> Very satisfied</label>
+         <label for="satisfied"><input id="satisfied" type="radio" name="satisfaction" class="inline" value="2" /> Satisfied</label>
+         <label for="neutral"><input id="neutral" type="radio" name="satisfaction" class="inline" value="3" /> Neutral</label>
+         <label for="dissatisfied"><input id="dissatisfied" type="radio" name="satisfaction" class="inline" value="4" /> Dissatisfied</label>
+         <label for="very-dissatisfied"><input id="very-dissatisfied" type="radio" name="satisfaction" class="inline" value="5" /> Very dissatisfied</label>
+        </fieldset>
+      
+        <fieldset>
+         Which of the following are important to you? 
+         <label for="immigration">
+          <input id="immigration" type="checkbox" name="politics" value="1" class="inline" /> Immigration
+         </label>
+        
+         <label for="environment">
+          <input id="environment" type="checkbox" name="politics" value="2" class="inline" /> Environment
+         </label>
+        
+         <label for="housing">
+          <input id="housing" type="checkbox" name="politics" value="3" class="inline" /> Housing
+         </label>
+        
+         <label for="energy">
+          <input id="energy" type="checkbox" name="politics" value="4" class="inline" /> Energy
+         </label>
+        </fieldset>
+      
+        <fieldset>
+         <label for="comments">Additional comments:
+          <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Write any additional comments here..."></textarea>
+         </label>
+        </fieldset>
+      
+        <input id="submit" type="submit" value="Submit" />
+    
+    </form>
+  </body>
+</html>
